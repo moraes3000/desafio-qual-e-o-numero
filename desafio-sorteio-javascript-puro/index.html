@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body onload="onLoading()">
+  <div class="box">
+    <div class="container">
+      <h1 class="title ">
+        Qual é o número?
+      </h1>
+
+      <div class=''>
+        <p class="paragraph-mensage">
+          <b id="mensagem"></b>
+        </p>
+        <span class="ultimo-valor" id="ultimo-valor">0</span>
+      </div>
+
+      <div class='' id="divRecomecar" style="visibility:hidden">
+        <button type="submit" onClick='return recomecarPartida(event)' class=" btn-recomecar">
+          <img src="./public/icone.svg" /> NOVA PARTIDA
+        </button>
+      </div>
+
+      <form class="formulario " onsubmit="return mySubmitFunction(event)">
+        <input type="number" placeholder="Digite o seu palpite" value='valorDigitado' min='0' class="valor-digitado "
+          id="valorDigitado" max='300' />
+        <input type="submit" class='btn-sorteio ' value="Enviar" />
+      </form>
+
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./main.js"></script>
+
+
+</html>

@@ -1,0 +1,114 @@
+:root {
+  --primary: #ef6c00;
+  --black: #262a34;
+  --success: #32bf00;
+  --danger: #cc3300;
+}
+button:hover {
+  cursor: pointer;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.box {
+  max-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-center: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.paragraph-mensage {
+  font-bold: bold;
+  font-size: 1.25rem;
+  margin-top: 6.25rem;
+}
+
+.ultimo-valor {
+  font-size: 8rem;
+}
+
+.btn-recomecar {
+  padding: 16px;
+  color: white;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #434854 0%, #9e9e9e 100%);
+  border: none;
+}
+
+.formulario {
+  display: flex;
+  margin-top: 6.25rem auto;
+}
+
+.valor-digitado {
+  display: flex;
+  flex: 1;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+}
+.valor-digitado:placeholder {
+  padding: 2rem;
+  margin-right: 2rem;
+}
+.valor-digitado:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+}
+
+.valor-digitado:disabled {
+  outline: none;
+  background-color: #cfcfcf;
+  border: 1px solid rgb(156 163 175);
+}
+
+.btn-sorteio {
+  border: none;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.btn-sorteio:disabled {
+  outline: none;
+  background-color: #cfcfcf;
+  border: 1px solid rgb(156 163 175);
+}
+*:disabled:hover {
+  cursor: not-allowed;
+}
+
+.acertou {
+  color: var(--success);
+}
+.erro {
+  color: var(--danger);
+}
+
+#divRecomecar {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.btn-recomecar {
+  display: flex;
+}
