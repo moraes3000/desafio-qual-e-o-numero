@@ -23,8 +23,8 @@ export default function App() {
     try {
       await fetch(url)
         .then((response) => response.json())
-        // .then((data) => setValorApi(data.value));
-        .then((data) => setValorApi(0));
+        .then((data) => setValorApi(data.value));
+        // .then((data) => setValorApi(0));
 
       if (valorDigitado < valorApi) {
         setMensagem("Menor");
