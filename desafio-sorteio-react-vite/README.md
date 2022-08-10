@@ -119,33 +119,4 @@ Exemplo:
 ● Organização e clareza do código
 
 
-<hr/>
-<hr/>
 
-# Tutorial de instalação
-
-Clone o projeto
-
-```term
-
-[git@github.com:moraes3000/reactjs-ignite-desafio-01.git](https://github.com/moraes3000/vue-desafio-facil-consulta)
-
-```
-
-Instale as dependências
-
-```term
-
-yarn
-
-```
-
-Rode o projeto
-
-```term
-
-yarn dev
-
-```
-
-Acesse [http://localhost:3000](http://localhost:3000/) para ver o resultado.
